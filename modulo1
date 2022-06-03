@@ -1,0 +1,28 @@
+//                         LINGUAGEM   C
+
+compilador make
+   make "nome do arquivo"
+   ./"nome do arquivo"
+
+
+retornar um valor
+    printf("hello, world")
+
+
+variavel
+    //tipo da variavel   nome da variavel = get_string("valor");
+    string answer = get_string("what's your name?");
+
+
+
+
+
+//                            EXEMPLO
+
+ #include <stdio.h>
+
+int main(void)
+{
+    
+    printf("hello, world!");
+}
