@@ -102,7 +102,7 @@ então temos que fazer o casting, " converter os inteiros para float antes de ca
 
 //                     CONDIÇÕES
 else e if funcionam como em '.js'
-switch var , case constante x: , e break; também
+switch var , case , e break; também
 
 
 //                    LOOPS, EXPRESSÕES BOOLEANAS
