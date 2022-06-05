@@ -1,0 +1,65 @@
+ #include <cs50.h>
+ #include <stdio.h>
+
+int main(void)
+{
+//                               LINGUAGEM   C
+
+
+ //                               COMPILAÇÃO           
+compilador make
+   make "nome do arquivo"
+   ./"nome do arquivo"
+ 
+
+ //                           FUNÇÕES E ARGUMENTOS
+ // funções são ações ou verbos, argumentos são as entradas para as funções
+ /* funções tem duas saidas: 
+       efeitos colaterais, impressão na tela
+       valores de retorno, um valor que retorna ao computador     */
+retornar um valor de texto formatado
+    printf("hello, world");    
+string answer = get_string("what's your name");  
+//"get_string" é da biblioteca CC50, então para criar um imput tem que pesquisar
+//tipo da variavel   nome da variavel = get_string("valor");
+      string             answer       = get_string("what's your name?");
+
+
+// COMANDO TERMINAL
+ls : listar
+rm : remover //rm arquivo
+rmdir : remover diretório
+mv : renomear/mover //mv arquivo.c novonome.c   //mv arquivo.c destino/
+mkdir : criar pasta/diretório
+cd : entrar em diretório
+cd.. : voltar diretório
+
+
+//                          FORMATOS
+ bool , uma expressão booleana verdadeira ou falsa
+ char , um único caractere ASCII como a ou 2
+ float , um valor de vírgula flutuante ou número real com um valor decimal
+ double , um valor de vírgula flutuante com mais dígitos do que um float
+ int , inteiros até um certo tamanho ou número de bits
+ long , inteiros com mais bits, para que possam contar mais do que um int
+ string , uma linha de caracteres
+
+E a biblioteca CS50 tem funções correspondentes para obter entrada de vários tipos:
+
+ get_char 
+ get_double 
+ get_float 
+ get_int 
+ get_long 
+ get_string 
+
+//                            EXEMPLO
+ #include <cs50.h>
+ #include <stdio.h>
+
+int main(void)
+{
+    string answer = get_string("what's yous name?")
+    printf("olá, %s",resposta);
+}
+}
