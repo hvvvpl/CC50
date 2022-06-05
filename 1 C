@@ -17,12 +17,12 @@ compilador make
  /* funções tem duas saidas: 
        efeitos colaterais, impressão na tela
        valores de retorno, um valor que retorna ao computador     */
-retornar um valor de texto formatado
-    printf("hello, world");    
-string answer = get_string("what's your name");  
-//"get_string" é da biblioteca CC50, então para criar um imput tem que pesquisar
+    printf("hello, world"); : retornar um valor de texto formatado    
 //tipo da variavel   nome da variavel = get_string("valor");
       string             answer       = get_string("what's your name?");
+      //"get_string" é da biblioteca CC50
+\n : sequencia de escape/texto que representa outro texto
+//ex: printf("olá, %s\n" ,answer);
 
 
 // COMANDO TERMINAL
@@ -38,14 +38,13 @@ cd.. : voltar diretório
 //                          FORMATOS
  bool , uma expressão booleana verdadeira ou falsa
  char , um único caractere ASCII como a ou 2
- float , um valor de vírgula flutuante ou número real com um valor decimal
- double , um valor de vírgula flutuante com mais dígitos do que um float
+ float ,  número real com um valor decimal
+ double , número real com mais dígitos do que um float
  int , inteiros até um certo tamanho ou número de bits
  long , inteiros com mais bits, para que possam contar mais do que um int
  string , uma linha de caracteres
 
 E a biblioteca CS50 tem funções correspondentes para obter entrada de vários tipos:
-
  get_char 
  get_double 
  get_float 
@@ -53,13 +52,63 @@ E a biblioteca CS50 tem funções correspondentes para obter entrada de vários 
  get_long 
  get_string 
 
-//                            EXEMPLO
- #include <cs50.h>
- #include <stdio.h>
+Para printf, também, existem diferentes marcadores de posição para cada tipo:
+ %c  para caracteres
+ %f  para flutuadores, duplos
+ %i  para ints
+ %li  para longos
+ %s  para strings
 
-int main(void)
-{
-    string answer = get_string("what's yous name?")
-    printf("olá, %s",resposta);
-}
+
+//              OPERADORES, LIMITAÇÕES, TRUNCAMENTOS
+-, +, *, /      (menos, mais, multiplicação, divisão)
+<, >, <=, >=    (menor, maior,menor ou igual, maior ou igual)
+%               (resto da divisão)
+++              (aumentar em um valor)
+--              (diminuir em um valor)
+**              (potencia)
+==,===          (é igual? true ou false (=== do mesmo tipo))
+!=, !==         (é diferente? true ou false(!== do mesmo tipo))
+&&              (esse E esse são verdadeiros?)
+||              (esse OU esse é verdadeiro?)
+
+//EX : somar o valor de x e y 
+     {
+     int x = get_int("x: ");
+ 
+     int y = get_int("y: ");
+
+     printf("%i\n", x + y); 
+     }
+
+/*quando usamos int para contas, o valor apos a virgula é perdido "truncado"
+então temos que fazer o casting, " converter os inteiros para float antes de calcular*/
+//ex:
+     int x = get_int("x: ");
+     int y = get_int("y: ");
+     
+     float z = x / y;
+     printf("%li\n", x + y); 
+
+
+//                    VARIAVEIS E BOAS PRÁTICAS 
+ //EX : somar 1 a variavel
+    {
+        contador = contador + 1;
+        contador += 1;
+        contador++;
+    }
+
+
+//                     CONDIÇÕES
+else e if funcionam como em '.js'
+switch var , case constante x: , e break; também
+
+
+//                    LOOPS, EXPRESSÕES BOOLEANAS
+while : se verdadeiro roda o codigo
+for :
+
+
+
 }
