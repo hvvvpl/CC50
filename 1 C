@@ -24,8 +24,8 @@ compilador make
 \n : sequencia de escape/texto que representa outro texto
 //ex: printf("olá, %s\n" ,answer);
 
+//                           COMANDO TERMINAL
 
-// COMANDO TERMINAL
 ls : listar
 rm : remover //rm arquivo
 rmdir : remover diretório
@@ -107,8 +107,8 @@ switch var , case , e break; também
 
 //                    LOOPS, EXPRESSÕES BOOLEANAS
 while : se verdadeiro roda o codigo
-for :
 
+for :
 
 
 }
